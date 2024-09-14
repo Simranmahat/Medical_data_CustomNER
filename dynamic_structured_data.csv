@@ -1,2 +1,2 @@
-AGE,GENDER,SYMPTOMS,WEIGHT
-23-year-old,female,Zyrtec.,130 pounds
+AGE,GENDER,WEIGHT,SYMPTOMS,DISEASE
+23-year-old,female,130 pounds,swollen.,loratadine.

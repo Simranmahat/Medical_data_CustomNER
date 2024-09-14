@@ -1,0 +1,36 @@
+[2024-06-17 03:52:03,184] [DEBUG] Config overrides from CLI: ['paths.train', 'paths.dev']
+[38;5;4mℹ Saving to output directory:
+/content/drive/MyDrive/Sem/trained_models/output[0m
+[38;5;4mℹ Using GPU: 0[0m
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.10/dist-packages/spacy/__main__.py", line 4, in <module>
+    setup_cli()
+  File "/usr/local/lib/python3.10/dist-packages/spacy/cli/_util.py", line 87, in setup_cli
+    command(prog_name=COMMAND)
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/typer/core.py", line 723, in main
+    return _main(
+  File "/usr/local/lib/python3.10/dist-packages/typer/core.py", line 193, in _main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/typer/main.py", line 692, in wrapper
+    return callback(**use_params)
+  File "/usr/local/lib/python3.10/dist-packages/spacy/cli/train.py", line 54, in train_cli
+    train(config_path, output_path, use_gpu=use_gpu, overrides=overrides)
+  File "/usr/local/lib/python3.10/dist-packages/spacy/cli/train.py", line 76, in train
+    setup_gpu(use_gpu)
+  File "/usr/local/lib/python3.10/dist-packages/spacy/cli/_util.py", line 272, in setup_gpu
+    require_gpu(use_gpu)
+  File "/usr/local/lib/python3.10/dist-packages/thinc/util.py", line 230, in require_gpu
+    raise ValueError("Cannot use GPU, CuPy is not installed")
+ValueError: Cannot use GPU, CuPy is not installed
